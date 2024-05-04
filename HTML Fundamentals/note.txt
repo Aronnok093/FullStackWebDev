@@ -1,0 +1,38 @@
+# html introduction.
+->Meta tag.
+->No cache Meta Tag.
+->Text Formating.
+->Heading Tag.
+->Table.
+->Ordered Unordered List.
+->Form.
+->Img Tag.
+->Video Tag.
+->Iframe Tag.
+->Audio Tag.
+->Time Tag.
+->Html Datalist Tag.
+->Html emoje
+margin Vs padding:
+    Margins are the space outside of an element's border.
+    They create distance between the element and its neighboring elements.
+
+    Padding is the space between the element's content and its border.
+    It creates space inside the element.
+css note:
+    .class_name{
+
+    }
+    element_name{
+
+    }
+
+    element_one,element_two {
+
+    }
+->Colspan and Rowspan.
+->Nested table.
+border-collapse :collapse;
+    Any spacing between adjacent table cells due to borders and padding is removed, 
+    resulting in a more seamless look.
+->html form
