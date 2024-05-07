@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction</title>
+</head>
+
+<style>
+    /*Universal Selector*/
+    *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /*class selector*/
+    .main_div{
+        width: 1000px;
+        height: auto;
+        margin:auto; /*margin auto to make div center*/
+    }
+    header{
+        background-color: blanchedalmond;
+        text-align: center;
+    }
+     /*Group selector*/
+    nav,footer {
+        background-color: rgb(245, 197, 197);
+        padding:10px;
+    }
+    nav{
+        text-align: right;
+        padding-right:30px;
+        
+    }
+    main{
+        border:2px solid blueviolet;
+        display:block;
+    }
+    
+    /*Descendant selectors*/
+    ul li{
+        display: inline-block;
+    }
+    a{
+        text-decoration: none;
+        padding: 2px;
+    }
+    /*class selector*/
+    .heading{
+        color: brown;
+    }
+    /*Id selector*/
+    #mainHeader{
+        color:darkgrey
+    }
+ 
+</style>
+
+<body>
+    <div class="main_div">
+    <header>
+        <h1 class="heading" id="mainHeader">Welcome to Sample Webpage</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="heading">About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies dui vel felis tincidunt ullamcorper.</p>
+        </section>
+        <section>
+            <h2 class="heading">Our Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies dui vel felis tincidunt ullamcorper.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Sample Webpage. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
