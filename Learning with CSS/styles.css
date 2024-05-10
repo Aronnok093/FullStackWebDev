@@ -1,0 +1,93 @@
+/* Variables */
+:root {
+    --primary-color: #ff6600;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+.main{
+    width: 1200px;
+    height: auto;
+    margin:auto;
+    padding:5px;
+    background-color: #ece5e5;
+}
+
+nav{
+    background-color: rgb(33, 31, 31);
+}
+nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    list-style-type: none;
+    display:inline-flex;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+
+
+}
+
+nav a:hover{
+    color: #ff6600;
+    background-color: #f0f0f0;
+    
+}
+
+header h1{
+    text-align: center;
+    text-decoration:dashed underline;
+}
+
+/* Adding border to elements */
+.recipe-info {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.recipe-info p {
+    word-wrap: break-word;
+}
+
+
+h3{
+    text-decoration: underline;
+}
+/* Adding spacing */
+.ingredients {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+/* Spacing */
+h2 {
+    letter-spacing: 1px;
+}
+
+
+.instructions {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+footer {
+    background-size: cover;
+    color: #060606;
+}
