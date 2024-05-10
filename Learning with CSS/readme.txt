@@ -86,3 +86,9 @@ In this example:
     -We can arrage elemnt in row-column.
     -Responsive Design.
     -Easy to maintance.
+    -gride can compress his own size.
+-Flex: 
+    -One dimensional layout.
+font:
+    -font family 
+    -font weight
