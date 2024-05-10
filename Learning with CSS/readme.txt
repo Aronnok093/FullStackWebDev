@@ -76,3 +76,13 @@ In this example:
 - The `h1` element sets its own `font-size` and overrides the `color` inherited from the `body`.
 - The `p` element sets its own `font-size`.
 - When the `h1` and `p` elements are placed inside a `div`, they still inherit the `font-family` and `color` from the `body`, but the `h1` element's `font-size` is inherited from its own style, not from the `body`.
+
+->In_Line CSS.
+->External CSS.
+->Internal CSS.
+->Different Type of Cursor.
+->Gride:
+    -Es a two-dimensional layout. 
+    -We can arrage elemnt in row-column.
+    -Responsive Design.
+    -Easy to maintance.
