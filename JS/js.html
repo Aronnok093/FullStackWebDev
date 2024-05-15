@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-JavaScript</title>
+</head>
+<body>
+    <script>
+        document.write("Hellow World.");
+        document.write("<br/>");
+        document.write("Fardin");
+        document.write("<br/>");
+
+        var id ="190204093";
+        var email="kfardin0@gmail.com";
+
+        document.write("ID: "+id+" Email: "+email);
+        //alert("This is an alert");
+        console.log("Hello I'm from console");
+
+        var x,y,z;
+
+        x=10; 
+        y=12.5;
+        z="String"
+        tmp= null;  //undefined is a type and a value in JavaScript. It is the 
+                    //default value assigned to a variable that has been declared but not initialized.
+                    //null is an assignment value that represents the intentional
+                    // absence of any object value. It is a value that must be explicitly assigned.
+        console.log(x,y,z,tmp);
+
+        function pi(){
+            const pi = 3.1416;  // constant value cant be change; 
+            document.write("<br/>pi value is: "+pi);
+        }
+        pi();
+
+        var golbal_Var="I'm From global Scope";
+
+        function ImFunction(){
+            var local_Var = "I'm from local Scope";
+
+            if(true){
+                let block_Var="I'm from block Scope";
+                console.log(golbal_Var);
+                console.log(local_Var);
+                console.log(block_Var);
+            }
+            console.log("Outside_Block: ");
+            console.log(golbal_Var);
+            console.log(local_Var);
+            //console.log(block_Var); //not accessable 
+        }
+        ImFunction();
+        console.log("Outside_Function: ");
+        console.log(golbal_Var);
+        //console.log(local_Var); //not accessable 
+        //console.log(block_Var); //not accessable 
+    </script>
+    
+</body>
+</html>
