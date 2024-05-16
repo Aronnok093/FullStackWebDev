@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+</head>
+<script>
+    const person={       //object
+        name:"Fardin",
+        age: 25,
+        gender:"male"
+    }
+
+    document.write("Name: "+person.name+"<br>");
+    document.write("Age: "+person.age+"<br>");
+    document.write("Gender: "+person.gender+"<br>");
+    document.write("Data: "+JSON.stringify(person)+"<br>");
+
+    //array
+    const arr =[1,2,3,4,5,6];
+    document.write("Numbers:<br>");
+
+    for(i=0;i<arr.length;i++){    //for loop 
+        document.write(arr[i]+" ");
+    }
+    document.write("<br>");
+    //date
+    let date = new Date();
+    document.write("Time & Date: "+date+"<br>");
+
+
+    //class + object
+
+    class info{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+
+        //greater and setter method
+
+        getName(){           
+            return name;
+        }
+        getAge(){
+            return age;
+        }
+
+        setName(name){
+            this.name=name;
+        }
+
+        setAge(age){
+            this.age=age;
+        }
+    };
+
+    class employee extends info{
+        constructor(name,age,id){
+            super(name,age);
+            this.id=id;
+        }
+
+        print(){
+            document.write("Name: " +this.name+ " Age: "+this.age+" ID: "+this.id);
+        }
+    }
+
+    const emp=new employee("Bulbul",24,190204110); //object
+
+    emp.print();
+    document.write("<br>");
+
+    //condition 
+    var a=3;
+    var b=5;
+
+    if(a>b){
+        console.log("a>b");
+    }
+    else{
+        console.log("a<b");
+    }
+
+    let num=12;
+    let num1='12';
+
+    if(num === num1){
+        console.log("Both are same and Type also same");
+    }
+    else{
+        console.log("Not same");
+    }
+    
+    //while loop
+   var i=0;
+    while(i<6){
+        console.log(arr[i]);
+        i++;
+    };
+
+    document.addEventListener("DOMContentLoaded",()=>{
+        const tmp=document.getElementById("list");
+        tmp.innerHTML="Start<br>";
+        var i=0;
+        while(i<6){
+            tmp.innerHTML+="SL: "+arr[i]+"<br>";
+            i++;
+        };
+        tmp.innerHTML+="End<br>";
+    })
+
+</script>
+<body>
+    <div id="list">
+
+    </div>
+</body>
+</html>
