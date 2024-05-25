@@ -3,97 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gride Flex Float</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    .grid-container{
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 5px;
-        margin:20px;
-    }
-    .grid-item{
-        background-color: red;
-        text-align: center;
-    }
-    .flex-container {
-    display: flex; /* Use flex display */
-    gap:40px;
-    margin:50px;
-}
-
-.flex-item {
-    background-color: #f0f0f0;
-    padding: 50px;
-    text-align: center;
-}
-.float{
-    float:right;
-}
-
-.item1{
-    width: 90px;
-    height: 90px;
-    background-color: bisque;
-    float:left;
-    text-align: center;
-}
-
-.item2{
-    width: 90px;
-    height: 90px;
-    background-color: red;
-    float:right;
-    text-align: center;
-}
-.inherit{
-    width: 90px;
-    height: 90px;
-    background-color:blueviolet;
-    float:inherit;
-    text-align: center;
-}
-.item3{
-    width: 90px;
-    height: 90px;
-    background-color: pink;
-    float:right;
-    text-align: center;
-  
-}
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-}
-</style>
 <body>
-    <!--Grid Container-->
-    <div class="grid-container">
-        <div class="grid-item">Item 1</div>
-        <div class="grid-item">Item 2</div>
-        <div class="grid-item">Item 3</div>
-        <div class="grid-item">Item 4</div>
-        <div class="grid-item">Item 5</div>
-        <div class="grid-item">Item 6</div>
-    </div>
-    <!--flex Container-->
-    <div class="flex-container">
-        <div class="flex-item">Item 1</div>
-        <div class="flex-item">Item 2</div>
-        <div class="flex-item">Item 3</div>
-        <div class="flex-item">Item 4</div>
-        <div class="flex-item">Item 5</div>
-        <div class="flex-item">Item 6</div>
-    </div>
-    <!--Floating-->
-        <div class="item1">Item 1</div>
-        <div class="item2">Item 2
-            <div class="inherit">Item 2.1</div>
+    <div class="container">
+        <div class="top-bar">
+            <h1>Dashboard</h1>
         </div>
-        <div class="item3">Item 3</div>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci voluptates facere placeat aliquid accusamus vel id dolore fugit iusto velit vero unde est consectetur 
-            non, magnam nemo quam a veritatis.
-        </p>
+        <div class="main-content">
+            <div class="left-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                    <div class="content-item">
+                    <h2>What is Lorem Ipsum?</h2>
+                    <p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type 
+                         specimen book. It has survived not only five centuries, but also the leap into 
+                         electronic typesetting, remaining essentially unchanged. It was popularised in 
+                         the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                         and more recently with desktop publishing software
+                         like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <div class="content-item"><h2>What is Lorem Ipsum?</h2>
+                        <p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap into 
+                             electronic typesetting, remaining essentially unchanged. It was popularised in 
+                             the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                             and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    <div class="content-item"><h2>What is Lorem Ipsum?</h2>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap into 
+                             electronic typesetting, remaining essentially unchanged. It was popularised in 
+                             the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                             and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    <div class="content-item"><h2>What is Lorem Ipsum?</h2>
+                        <p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap into 
+                             electronic typesetting, remaining essentially unchanged. It was popularised in 
+                             the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                             and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    <div class="content-item"><h2>What is Lorem Ipsum?</h2>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap into 
+                             electronic typesetting, remaining essentially unchanged. It was popularised in 
+                             the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                             and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    <div class="content-item"><h2>What is Lorem Ipsum?</h2>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap into 
+                             electronic typesetting, remaining essentially unchanged. It was popularised in 
+                             the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                             and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
